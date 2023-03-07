@@ -1,0 +1,35 @@
+### CREATE ITEM
+POST http://localhost:8080/items
+Accept: application/json
+Content-Type: application/json
+
+{
+  "name": "Item 1",
+  "status": "Barang Masuk"
+}
+
+### FIND ALL ITEMS
+GET http://localhost:8080/items
+Accept: application/json
+
+### FIND ITEM BY ID
+GET http://localhost:8080/items/1
+Accept: application/json
+
+### UPDATE ITEM
+PUT http://localhost:8080/items/1
+Accept: application/json
+Content-Type: application/json
+
+{
+  "name": "Item 1 update",
+  "status": "Barang Keluar"
+}
+
+### DELETE ITEM
+DELETE http://localhost:8080/items/1
+Accept: application/json
+
+### BY STATUS
+GET http://localhost:8080/items/status/Barang%20Masuk
+Accept: application/json
